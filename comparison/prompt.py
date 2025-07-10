@@ -1,0 +1,35 @@
+fining_prompt = {
+    'lv_dysfunc': {'prompt': ['Left ventricle with systolic dysfunction'],
+                   'label': 'Left ventricle dysfunction', 
+                   'threshold': 0.5385},  
+    'rv_dysfunc': {'prompt': ['Right ventricle with systolic dysfunction',],
+                   'label': 'Right ventricle dysfunction', 
+                    'threshold': 0.5228},
+    'lv_dilation': {'prompt': ['Left ventricle is dilated',
+                               'Left ventricle is enlarged in size'],
+                    'label': 'Left ventricle dilation', 
+                    'threshold': 0.5311}, 
+    'rv_dilation': {'prompt': ['Right ventricle is dilated',
+                               'Right ventricle is enlarged in size'], 
+                    'label': 'Right ventricle dilation', 
+                    'threshold': 0.5253},
+    'lv_hypertrophy': {'prompt': ['There is left ventricular hypertrophy',
+                                  'There is septal hypertrophy',
+                                  'LV is thickened'],
+                    'label': 'Left ventricle hypertrophy',
+                    'threshold': 0.5110},
+    'lv_lge_pattern': {'prompt': ['Delayed-enhancement imaging reveals transmural enhancement',
+                                  'Delayed-enhancement imaging reveals patchy enhancement',
+                                  'There is a large area of LAD scar'
+                                  ],
+                       'label': 'LGE',
+                    'threshold': 0.5105},
+    'aortic_dilation': {'prompt': ['Aortic root is ectatic',
+                                   'Ascending aortic is dilated',
+                                   'Descending aorta is dilated'],
+                        'label': 'Aortic dilation',
+                        'threshold': 0.5392}, 
+}
+
+diagnosis_lst = ['nicm', 'icm', 'amyl', 'hcm']
+acdc_lst = ['DCM', 'HCM', 'MINF', 'NOR', 'RV']

@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=cmr_clip
+#SBATCH -p defq
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --gres=gpu:a100:4
+#SBATCH -o log/%x.out
+#SBATCH -e log/%x.err
+echo "DATE                      = $(date)"
+echo "Hostname                  = $(hostname -s)"
+echo "Working Directory         = $(pwd)"
+
+# Load application environment
+# module load cuda11.7/toolkit/11.7.1
+
+
+# module load python39
+# Run application commands
+. temp_env/bin/activate
+
+#  . /data/aiiih/envs/mn1/bin/activate
+python train.py --config configs/cmr.json
