@@ -68,7 +68,7 @@
         "v2t_metrics"
      ],
     "trainer": {
-        "epochs": 2,
+        "epochs": 100,
         "max_samples_per_epoch": 20000,
         "save_dir": "exps",
         "save_period": 1,
