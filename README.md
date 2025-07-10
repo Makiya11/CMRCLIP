@@ -18,7 +18,7 @@ CMRCLIP is a multimodal contrastive learning framework designed for cardiac magn
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/CMRCLIP.git
+git clone git@github.com:Makiya11/CMRCLIP.git
 cd CMRCLIP
 
 # Install dependencies
